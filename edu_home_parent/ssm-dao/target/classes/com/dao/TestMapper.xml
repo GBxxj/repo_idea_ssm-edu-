@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<!--映射文件与TestMapper接口要同层级别包加同名，编写sql语句-->
+
+<mapper namespace="com.dao.TestMapper">
+      <!--查询test里面所有数据-->
+     <select id="findAllTest" resultType="com.domain.Test">
+         select * from test
+     </select>
+</mapper>
